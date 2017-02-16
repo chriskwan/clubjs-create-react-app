@@ -7,6 +7,13 @@ Tutorial on [Create React App](https://github.com/facebookincubator/create-react
 
 * Deploying to GitHub Pages: https://medium.freecodecamp.com/surge-vs-github-pages-deploying-a-create-react-app-project-c0ecbf317089#.747cxv9g3
 
+1. Add a homepage field to `package.json`: `"homepage": "https://<github-username>.github.io/<project-repo>"`
+1. `npm run build`
+1. `npm install --save-dev gh-pages`
+1. Add a new line to scripts in `package.json`: `"deploy" : "npm run build&&gh-pages -d build"`
+1. `npm run deploy`
+1. Check it out on GitHub pages!
+
 * My hackathon project using Create React App: https://github.com/chriskwan/bookstagram
 
 * I <3 Create React App: https://twitter.com/chriskwan/status/830862683733909504
